@@ -1,0 +1,38 @@
+Design
+- written in the Elm programming language
+- published as an Android app
+- using the Testing Without Mocks pattern, most importantly
+  - no mocking of any kind, use nullable infrastructure wrappers instead
+  - sociable state-based unit tests
+- unidirectional data flow
+- implement accessibility features from the start
+- design for internationalization (i18n) and localization (l10n)
+- follow security best practices throughout development
+- document any additional decisions as Architecture Decision Records (ADR)
+
+Test-driven development: for each feature
+- first compose a list of test cases
+- for each test case, one by one
+  - write a failing unit test
+  - make the test pass
+  - propose refactoring steps
+- add an acceptance test
+  - write a feature specification in gherkin notation
+  - generate test steps
+- add security-focused tests
+
+Infrastructure
+- this project should be hosted on GitHub
+- add scripts and configuration files to automate the build, test and release process
+- implement secure coding practices and regular security audits
+- no pull requests, I want to directly commit to the main branch
+- use semantic versioning, tag commits with version numbers
+
+I don't know Elm and Android development. Teach me as we go along.
+
+I want to write a blog post based on everything I do here
+- the blog should be written using Jekyll
+- the blog should be hosted on GitHub Pages
+Add blog post drafts for all my actions. The reader should know that I am using AI assistance, so feel free to add the prompts and discuss the outcomes.
+
+Don't give me completions in markdown blockquotes.
