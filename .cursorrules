@@ -1,6 +1,16 @@
+Remember, I am working on Windows.
+
+I want to write a blog post based on everything I do here
+- the blog should be written using Jekyll
+- the blog should be hosted on GitHub Pages
+
+Add blog post drafts for all my actions. The reader should know that I am using AI assistance, so feel free to add the prompts and discuss the outcomes.
+
+I don't know Elm and Android development. Teach me as we go along.
+
 Design
 - written in the Elm programming language
-- published as an Android app
+- published as an Android app using cordova
 - using the Testing Without Mocks pattern, most importantly
   - no mocking of any kind, use nullable infrastructure wrappers instead
   - sociable state-based unit tests
@@ -27,12 +37,3 @@ Infrastructure
 - implement secure coding practices and regular security audits
 - no pull requests, I want to directly commit to the main branch
 - use semantic versioning, tag commits with version numbers
-
-I don't know Elm and Android development. Teach me as we go along.
-
-I want to write a blog post based on everything I do here
-- the blog should be written using Jekyll
-- the blog should be hosted on GitHub Pages
-Add blog post drafts for all my actions. The reader should know that I am using AI assistance, so feel free to add the prompts and discuss the outcomes.
-
-Don't give me completions in markdown blockquotes.
