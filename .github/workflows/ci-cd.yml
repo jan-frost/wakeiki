@@ -37,27 +37,32 @@ jobs:
         sdkmanager "platform-tools" "platforms;android-34" "build-tools;34.0.0"
 
     - name: Run elm-format
+      working-directory: ./wakeiti-app
       run: elm-format --validate src/
 
     - name: Build Elm project
-      run: elm make src/Main.elm --output=www/elm.js
+      working-directory: ./wakeiti-app
+      run: elm make src/Main.elm --output=../www/elm.js
 
     - name: Run tests
+      working-directory: ./wakeiti-app
       run: elm-test
 
     - name: Build Android app
+      working-directory: ./wakeiti-app
       run: |
         cordova platform add android
         cordova build android
 
     - name: Run security audit
+      working-directory: ./wakeiti-app
       run: npm audit
 
     - name: Upload APK artifact
       uses: actions/upload-artifact@v3
       with:
         name: app-debug
-        path: platforms/android/app/build/outputs/apk/debug/app-debug.apk
+        path: wakeiti-app/platforms/android/app/build/outputs/apk/debug/app-debug.apk
 
   release:
     needs: build-and-test
