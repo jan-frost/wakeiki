@@ -18,25 +18,71 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: My AI-Assisted Programming Journey
-email: mail@janfrost.de
-description: >- # this means to ignore newlines until "baseurl:"
-  Follow my journey as I learn Elm and Android development with AI assistance.
-# baseurl: "docs" # the subpath of your site, e.g. /blog
-# url: "https://jan-frost.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-github_username:  jan-frost
-mastodon:
-  username: janfrost
-  instance: mastodon.social
-
 # Build settings
-remote_theme: daattali/beautiful-jekyll
 plugins:
   - jekyll-feed
   - jekyll-remote-theme
-
+  - jekyll-include-cache
 # Disable GitHub Metadata
 github: [metadata]
+
+remote_theme: mmistakes/minimal-mistakes@4.26.2
+minimal_mistakes_skin    : "dark" # "default", "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+
+# Site Settings
+locale                   : "en-US"
+title                    : "My AI-Assisted Programming Journey"
+title_separator          : ""
+subtitle                 : ""
+name                     : &name "Jan Frost" # &name is a YAML anchor which can be *referenced later
+description              : &description ""
+# url                      : https://mmistakes.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+# baseurl                  : "/minimal-mistakes" # the subpath of your site, e.g. "/blog"
+repository               : "jan-frost/wakeiti"
+teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
+
+# Site Author
+author:
+  name             : *name # *name is a YAML reference pointing to the &anchor earlier
+#  avatar           : "/assets/images/michael-rose.jpg"
+#  bio              : "Just another *boring*, *tattooed*, *time traveling*, *designer*."
+  location         : "Lübeck, Germany"
+#  links:
+#    - label: "Made Mistakes"
+#      icon: "fas fa-fw fa-link"
+#      url: "https://mademistakes.com"
+#    - label: "Twitter"
+#      icon: "fab fa-fw fa-twitter-square"
+#      url: "https://twitter.com/mmistakes"
+#    - label: "GitHub"
+#      icon: "fab fa-fw fa-github"
+#      url: "https://github.com/mmistakes"
+#    - label: "Instagram"
+#      icon: "fab fa-fw fa-instagram"
+#      url: "https://instagram.com/mmistakes"
+      
+# Site Footer
+footer:
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/jan-frost/wakeiki"
+
+# Defaults
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: false
+      comments: false
+      share: false
+      related: flase
 
 # Exclude from processing.
 # The following items will not be processed, by default.

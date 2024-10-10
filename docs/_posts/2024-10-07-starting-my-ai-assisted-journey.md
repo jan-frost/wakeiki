@@ -1,11 +1,8 @@
 ---
-layout: post
 title:  "Starting My AI-Assisted Programming Journey"
 date:   2024-10-07 21:00:00 +0200
 categories: development
 ---
-
-# Starting My AI-Assisted Programming Journey
 
 Today marks the beginning of an exciting adventure into the world of Elm and Android development, guided by AI assistance. I've set up this blog to document my progress, share insights, and reflect on the learning process.
 
