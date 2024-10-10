@@ -34,7 +34,7 @@ Install-Tool "java" "Microsoft.OpenJDK.17"
 Install-Tool "gradle" "Gradle.Gradle"
 
 # Install Android command-line tools
-$androidSdkRoot = "$env:LOCALAPPDATA\Android\Sdk"
+$androidSdkRoot = "C:\tools\android-sdk"
 $cmdlineToolsPath = "$androidSdkRoot\cmdline-tools\latest"
 
 if (-not (Test-Path $cmdlineToolsPath)) {
