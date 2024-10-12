@@ -1,24 +1,29 @@
-module Main exposing (main, init, update, view, Model, Msg(..))
+module Main exposing (Model, Msg(..), init, main, update, view)
 
 import Browser
-import Html exposing (Html, div, text, h1, p)
+import Html exposing (Html, div, h1, p, text)
 import Html.Attributes exposing (style)
+
 
 type alias Model =
     {}
 
-init : () -> (Model, Cmd Msg)
+
+init : () -> ( Model, Cmd Msg )
 init _ =
-    ({}, Cmd.none)
+    ( {}, Cmd.none )
+
 
 type Msg
     = NoOp
 
-update : Msg -> Model -> (Model, Cmd Msg)
+
+update : Msg -> Model -> ( Model, Cmd Msg )
 update msg model =
     case msg of
         NoOp ->
-            (model, Cmd.none)
+            ( model, Cmd.none )
+
 
 view : Model -> Html Msg
 view model =
@@ -26,6 +31,7 @@ view model =
         [ h1 [ style "color" "blue" ] [ text "Hello, Elm Android App!" ]
         , p [] [ text "If you can see this, the Elm app is working correctly." ]
         ]
+
 
 main : Program () Model Msg
 main =

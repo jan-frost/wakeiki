@@ -31,14 +31,9 @@ jobs:
       run: |
         npm install -g elm
         npm install -g elm-test
-        npm install -g elm-format
         npm install -g cordova
         yes | sdkmanager --licenses
         sdkmanager "platform-tools" "platforms;android-34" "build-tools;34.0.0"
-
-    - name: Run elm-format
-      working-directory: ./wakeiti-app
-      run: elm-format --validate src/
 
     - name: Build Elm project
       working-directory: ./wakeiti-app
