@@ -50,6 +50,3 @@ $indexHtml = @"
 "@
 
 $indexHtml | Out-File -FilePath "www/index.html" -Encoding utf8
-
-# Build Cordova app
-cordova build android

@@ -7,7 +7,10 @@
   "scripts": {
     "build": "powershell -ExecutionPolicy Bypass -File build.ps1",
     "test": "elm-test",
-    "start": "cordova run android",
+    "build_android": "cordova build android",
+    "build_browser": "cordova build browser",
+    "start_android": "cordova run android",
+    "start_browser": "cordova run browser",
     "prepare": "cd .. && husky install wakeiti-app/.husky"
   },
   "keywords": [

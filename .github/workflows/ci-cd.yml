@@ -37,7 +37,7 @@ jobs:
 
     - name: Build Elm project
       working-directory: ./wakeiti-app
-      run: elm make src/Main.elm --output=../www/elm.js
+      run: elm make src/Main.elm --output=www/elm.js
 
     - name: Run tests
       working-directory: ./wakeiti-app
