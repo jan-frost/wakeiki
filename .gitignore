@@ -1,10 +1,9 @@
 ﻿docs/Gemfile.lock
 wakeiti-app/elm-stuff/
-wakeiti-app/node_modules/
 wakeiti-app/platforms/
 wakeiti-app/plugins/
 wakeiti-app/www/elm.js
 wakeiti-app/build-tools
 wakeiti-app/cordova-app/www/*.js
 wakeiti-app/licenses
-wakeiti-app/package-lock.json
+node_modules
